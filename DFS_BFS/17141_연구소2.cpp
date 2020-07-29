@@ -133,7 +133,7 @@ void choose_virus(int cnt)
 			d_visited[i] = true;
 
 			virus_order.push_back(i);
-			choose_virus(cnt + 1);
+			choose_virus(i +1);
 			virus_order.pop_back();
 			d_visited[i] = false;
 		}
